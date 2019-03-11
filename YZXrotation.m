@@ -8,6 +8,7 @@ function rot = YZXrotation(vec, tiltRads)
     psi = 0;
     if (abs(theta) < pi/2 - 0.01)
         psi = atan2(vec(3), vec(1));
+    end
 
     rot = zeros(3);
     rot(1,1) = cos(theta)*cos(psi);
